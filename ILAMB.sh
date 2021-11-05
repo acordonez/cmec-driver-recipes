@@ -11,9 +11,9 @@ wget https://github.com/rubisco-sfa/ILAMB/archive/refs/tags/v${ilamb_version}.ta
 tar -xvf v2.6.tar.gz
 
 # Copy only the needed files to ILAMB folder
-mkdir ../ILAMB
-cp ILAMB-${ilamb_version}/contents.json ../ILAMB
-cp -r ILAMB-${ilamb_version}/cmec-driver ../ILAMB
+mkdir ../modules/ILAMB
+cp ILAMB-${ilamb_version}/contents.json ../modules/ILAMB
+cp -r ILAMB-${ilamb_version}/cmec-driver ../modules/ILAMB
 
 # Create ILAMB conda environment
 conda create -n _CMEC_ilamb -c conda-forge ILAMB
