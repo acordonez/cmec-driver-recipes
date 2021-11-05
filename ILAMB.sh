@@ -11,9 +11,7 @@ wget https://github.com/rubisco-sfa/ILAMB/archive/refs/tags/v${ilamb_version}.ta
 tar -xvf v2.6.tar.gz
 
 # Copy only the needed files to ILAMB folder
-module_dir=${CMEC_MODULE_DIR}
-rm -rf ${module_dir}
-mkdir ${module_dir}
+module_dir=$CMEC_MODULE_DIR
 cp ILAMB-${ilamb_version}/contents.json ${module_dir}
 cp -r ILAMB-${ilamb_version}/cmec-driver ${module_dir}
 
